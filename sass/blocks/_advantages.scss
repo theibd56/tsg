@@ -1,0 +1,44 @@
+.advantages {
+  background: #F6F6F6;
+  &-container {
+    position: relative;
+    min-height: 240px;
+  }
+  &-wrapper {
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+    gap: 20px;
+
+    position: absolute;
+    top: -50%;
+    z-index: 50;
+    width: 100%;
+  }
+  &-item {
+    min-height: 240px;
+    padding: 30px 30px 20px 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(12.5px);
+
+    display: flex;
+    flex-direction: column;
+    &__content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__ico {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+    &__title {
+      color: #444;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}

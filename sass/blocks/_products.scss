@@ -1,0 +1,216 @@
+.products {
+  background: #F6F6F6;
+  padding: 80px 0 100px;
+  &-title {
+    max-width: 1030px;
+    margin: 0 auto 50px;
+    span {
+      color: var(--accent-color);
+    }
+  }
+  &-slider {
+    margin-bottom: 100px;
+  }
+  &-item {
+    padding: 30px 30px 120px 30px;
+    border-radius: 20px;
+    background: #FFF;
+    position: relative;
+    &__image {
+      height: 272px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    &__title {
+      margin-top: 5px;
+    }
+    &__descr {
+      margin-top: 10px;
+      color: #444;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &__buttons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      right: 30px;
+
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+
+        width: 163px;
+        height: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 10px;
+
+        transition: all .3s ease;
+
+      }
+    }
+    &__order {
+      color: #fff;
+      background: var(--accent-color);
+      &:hover {
+        color: #fff;
+        opacity:0.7;
+      }
+    }
+    &__more {
+      color: #111;
+      border: 1px solid #E6E6E6;
+      &:hover {
+        color: #111;
+        opacity:0.7;
+      }
+    }
+  }
+
+  &-banner {
+    border-radius: 40px;
+    background: #E22E2E;
+    position: relative;
+    overflow: hidden;
+
+    padding: 40px 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    &__text {
+      position: relative;
+      z-index: 2;
+    }
+    &__title {
+      color: #FFF;
+      font-size: 57px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 50px; /* 87.719% */
+
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-top: 3px;
+        margin-left: 82px;
+        color: #FFF;
+        font-size: 73px;
+        font-weight: 900;
+        line-height: 50px; /* 68.493% */
+      }
+    }
+    &__descr {
+      margin-top: 25px;
+      margin-left: 50px;
+      max-width: 569px;
+      color: #FFF;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      span {
+        font-weight: 600;
+        background: #FF9900;
+      }
+    }
+    &__form {
+      position: relative;
+      z-index: 2;
+      width: 338px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      input {
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        background: #fff;
+        border: none;
+        outline: none;
+        padding: 0 20px;
+        color: var(--main-color);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        &::placeholder {
+          color: #B9B9B9;
+        }
+      }
+      button {
+        height: 60px;
+        width: 100%;
+
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+
+        background: none;
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.50);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    &__smoke {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &-points {
+    margin-top: 30px;
+    display: grid;
+    grid-template: auto / repeat(2, 1fr);
+    gap: 30px;
+    &__item {
+      border-radius: 40px;
+      background: #FFF;
+      padding: 30px;
+
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      &_title {
+        color: #E8E8E8;
+        text-align: center;
+        font-size: 120px;
+        font-weight: 800;
+        line-height: normal;
+      }
+      &_text {
+        color: #444;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}

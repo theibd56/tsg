@@ -1,3 +1,140 @@
 .offer {
-  padding: 75px 0;
+  padding: 80px 0 75px;
+  &-title {
+    max-width: 1030px;
+    margin: 0 auto 60px auto;
+    span {
+      color: var(--accent-color);
+    }
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-left, &-right {
+    width: 100%;
+    max-width: 275px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &-slider {
+    width: 606px;
+    position: relative;
+    .swiper {
+      border-radius: 50%;
+      width: 450px;
+    }
+
+    .swiper-slide {
+      border-radius: 50%;
+      background: #E6E6E6; /* Default color */
+      padding: 8px;
+      transition: background 0.3s ease; /* Smooth transition */
+      position: relative; /* For the overlay */
+      overflow: hidden;
+      img {
+        position: relative;
+        z-index: 5;
+      }
+      .fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #E22E2E; /* Color for filled part */
+        transition: width 0.3s ease; /* Smooth transition for fill */
+      }
+    }
+
+    &__navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+
+      transform: translateY(-50%);
+
+      div {
+        width: 50px;
+        height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid #E6E6E6;
+        border-radius: 50%;
+
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+          background: rgba(255, 255, 255, 0.8);
+          border: 1px solid #fff;
+        }
+        &.swiper-button-disabled {
+          opacity:0.5;
+          cursor: default;
+          &:hover {
+            background: none;
+            border: 1px solid #E6E6E6;
+          }
+        }
+      }
+    }
+    &__pagination {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      .swiper-pagination-bullet {
+        display: block;
+        margin: 0 !important;
+        width: 10px;
+        height: 10px;
+        background: #E6E6E6;
+        opacity: 1;
+        transition: all 0.3s ease;
+        position: relative;
+        &:before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border:1px solid #111;
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+        }
+        &-active {
+          background: #111;
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }
+
+//.swiper {
+//  width: 450px;
+//  border-radius: 50%;
+//  background: #E6E6E6;
+//  padding: 8px;
+//
+//}
+//.swiper-slide {
+//
+//}

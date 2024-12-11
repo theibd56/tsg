@@ -57,18 +57,14 @@ const productsSlider = new Swiper('.products-slider', {
         slideChangeTransitionStart: function () {
             const totalSlides = this.slides.length;
 
-            // Update each slide's fill based on its index
             this.slides.forEach((slide, index) => {
-                const fillPercentage = (index + 1) / totalSlides * 100; // Calculate fill percentage
-                slide.style.setProperty('--fill-percentage', `${fillPercentage}%`); // Set custom property
+                const fillPercentage = (index + 1) / totalSlides * 100;
+                slide.style.setProperty('--fill-percentage', `${fillPercentage}%`);
 
-                // Update the clip-path for the filled part
                 slide.style.setProperty('clip-path', `inset(0 ${100 - fillPercentage}% 0 0)`);
             });
         },
-        slideChangeTransitionEnd: function () {
-            // Optionally, you can add any additional logic here
-        }
+        slideChangeTransitionEnd: function () {}
     }
 })
 
@@ -103,8 +99,8 @@ function updateFill(swiper) {
 
     swiper.slides.forEach((slide, index) => {
         const fillElement = slide.querySelector('.fill');
-        const fillPercentage = ((index + 1) / totalSlides) * 100; // Calculate fill percentage
-        fillElement.style.width = `${fillPercentage}%`; // Set the width of the fill element
+        const fillPercentage = ((index + 1) / totalSlides) * 100;
+        fillElement.style.width = `${fillPercentage}%`;
     });
 }
 

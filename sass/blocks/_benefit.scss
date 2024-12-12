@@ -134,8 +134,9 @@
     }
   }
   &-item {
-    width: 386px;
-    height: 170px;
+    width: 100%;
+    max-width: 386px;
+    min-height: 170px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.90);
     backdrop-filter: blur(12.5px);

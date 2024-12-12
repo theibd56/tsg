@@ -1,0 +1,16 @@
+@media screen and (max-width:1200px) {
+  .result-wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .result-item {
+    width: calc(33.33% - 14px);
+    height: auto;
+    &:nth-child(even) {
+      margin: 0;
+    }
+  }
+}

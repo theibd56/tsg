@@ -10,6 +10,8 @@
     align-items: center;
     gap: 5px;
     &__left {
+      width: 100%;
+      max-width: 730px;
       display: flex;
       flex-direction: column;
       gap: 40px;
@@ -18,6 +20,7 @@
       z-index: 5;
     }
     &__right {
+      min-width: 450px;
       position:relative;
       z-index: 1;
       &_text {

@@ -6,8 +6,9 @@ import 'swiper/css/bundle';
 const offerSlider = new Swiper('.offer-slider .swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
-    speed: 600,
+    speed: 200,
     loop: false,
+    effect: "fade",
     breakpoints: {
         // 300: {
         //     slidesPerView: 2.25,

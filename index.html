@@ -23,7 +23,7 @@
                 +7 923 <span>115 33 33</span>
               </div>
             </a>
-            <a href="#feedback" class="header-feedback">
+            <a data-fancybox href="#modal-feedback" class="header-feedback">
               Заказать звонок
             </a>
           </div>
@@ -1008,6 +1008,25 @@
 
       </div>
     </footer>
+
+    <div class="modal-feedback" id="modal-feedback" style="display: none">
+      <div class="modal-feedback__title">
+        Оставить заявку
+      </div>
+      <form action="" class="modal-feedback__form">
+        <div class="modal-feedback__form_fields">
+          <input type="text" name="name" placeholder="Ваше имя">
+        </div>
+        <div class="modal-feedback__form_fields">
+          <input type="tel" name="phone" placeholder="Телефон">
+        </div>
+        <button class="modal-feedback__form_button">Оставить заявку</button>
+        <p class="modal-feedback__form_policy">
+          Нажимая на кнопку вы даёте согласие на обработку данных
+        </p>
+      </form>
+    </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

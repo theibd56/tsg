@@ -1,7 +1,15 @@
 import Swiper from 'swiper/bundle';
+import { Fancybox } from "@fancyapps/ui";
 
 import './sass/_app.scss';
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import 'swiper/css/bundle';
+
+
+//fancybox (может конфликтовать)
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+});
 
 const offerSlider = new Swiper('.offer-slider .swiper', {
     slidesPerView: 1,

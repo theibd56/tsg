@@ -55,12 +55,12 @@ const productsSlider = new Swiper('.products-slider', {
         // 300: {
         //     slidesPerView: 2.25,
         // },
-        // 576: {
-        //     slidesPerView: 3,
-        // },
-        // 992: {
-        //     slidesPerView: 4,
-        // },
+        576: {
+            slidesPerView: 2.5,
+        },
+        992: {
+            slidesPerView: 3,
+        },
     },
     on: {
         slideChangeTransitionStart: function () {

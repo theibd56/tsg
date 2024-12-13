@@ -1,0 +1,11 @@
+@media screen and (max-width: 1200px) {
+  .products-banner {
+    padding: 40px 80px;
+    &__title span {
+      margin-left: 50px;
+    }
+    &__descr {
+      margin-left: 20px;
+    }
+  }
+}

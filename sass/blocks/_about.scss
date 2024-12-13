@@ -1,9 +1,12 @@
 .about {
   background: #282828;
-  padding: 80px 0 100px;
-  position: relative;
+  padding: 0 0 100px;
   &-wrapper {
     max-width: 557px;
+  }
+  &-container {
+    padding-top: 80px;
+    position: relative;
   }
   &-title {
     color: #FFF;
@@ -42,7 +45,7 @@
   &-image {
     position: absolute;
     top: 0;
-    right: 80px;
+    left: 540px;
 
     width: 944px;
     height: 700px;

@@ -13,53 +13,79 @@
     justify-content: space-between;
   }
   &-left, &-right {
-    width: 100%;
-    max-width: 275px;
+    width: 275px;
 
     display: flex;
     flex-direction: column;
     gap: 40px;
   }
   &-slider {
-    width: 606px;
+    width: 100%;
     position: relative;
     .swiper {
-      border-radius: 50%;
-      width: 450px;
+      width: 100%;
+      //border-radius: 50%;
     }
-
     .swiper-slide {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      opacity: 0;
+      visibility: hidden;
+      .offer-left, .offer-right {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease;
+      }
+      &-active {
+        opacity: 1;
+        visibility: visible;
+        .offer-left, .offer-right {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    .swiper-wrapper {
+      align-items: center;
+    }
+    &__circle {
+      width: 450px;
+      min-width: 450px;
+      margin: 0 75px;
       border-radius: 50%;
       background: #E6E6E6; /* Default color */
       padding: 8px;
       transition: background 0.3s ease; /* Smooth transition */
       position: relative; /* For the overlay */
       overflow: hidden;
-      img {
-        position: relative;
-        z-index: 5;
-      }
-      .fill {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        background: #E22E2E; /* Color for filled part */
-        transition: width 0.3s ease; /* Smooth transition for fill */
-      }
     }
-
+    img {
+      position: relative;
+      z-index: 5;
+    }
+    .fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: #E22E2E; /* Color for filled part */
+      transition: width 0.3s ease; /* Smooth transition for fill */
+    }
     &__navigation {
+      width: 580px;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
       position: absolute;
       top: 50%;
-      left: 0;
-      right: 0;
+      left: 50%;
+      z-index: 50;
 
-      transform: translateY(-50%);
+      transform: translateY(-50%) translateX(-50%);
 
       div {
         width: 50px;

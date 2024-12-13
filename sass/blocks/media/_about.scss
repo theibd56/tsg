@@ -1,0 +1,9 @@
+@media screen and (max-width: 1200px) {
+  .about-advantages__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-advantages__item {
+    width: calc(33.33% - 17px);
+  }
+}

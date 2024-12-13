@@ -143,6 +143,9 @@
       font-weight: 400;
       line-height: normal;
     }
+    &_right {
+      white-space: nowrap;
+    }
     &_item {
       padding: 8px 0;
       display: flex;

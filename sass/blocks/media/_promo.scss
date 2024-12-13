@@ -12,3 +12,127 @@
     width: 585px;
   }
 }
+
+@media screen and (max-width:1200px) {
+  .promo-content__left {
+    max-width: calc(100% - 450px);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .promo-form {
+    flex-direction: column;
+    input, button {
+      width: 250px;
+    }
+  }
+  .promo-plus {
+    flex-direction: column;
+  }
+  .promo-content__left {
+    min-width: 300px;
+    max-width: calc(100% - 350px);
+  }
+  .promo-content__right_text {
+    max-width: 280px;
+    right: 50px;
+  }
+  .promo-content__right {
+    min-width: 400px;
+    margin-left: -80px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .promo {
+    padding: 90px 0 80px;
+    &-content {
+      align-items: flex-start;
+      &__left {
+        max-width: calc(100% - 300px);
+        gap: 24px;
+        min-width: auto;
+        z-index: auto;
+      }
+      &__right {
+        margin-left: 0;
+        margin-right: -80px;
+        margin-top: 80px;
+        //min-width: 269px;
+        min-width: 350px;
+        z-index: 5;
+        &_text {
+          max-width: 155px;
+          padding: 7px 10px;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: normal;
+
+          right: 62px;
+          bottom: -10px;
+        }
+      }
+    }
+    &-title {
+      max-width: 320px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 26px; /* 130% */
+    }
+    &-plus {
+      gap: 10px;
+      align-items: flex-start;
+      &__item {
+        padding: 7px 10px;
+        width: 100%;
+        min-width: 300px;
+        &_ico {
+          width: 30px;
+          min-width: 30px;
+          height: 30px;
+        }
+        &_title {
+          max-width: 125px;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+    &-descr {
+      min-width: 170px;
+      max-width: 170px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      position: relative;
+      z-index: 10;
+    }
+    &-form {
+      align-items: flex-start;
+      gap: 10px;
+      button, input {
+        font-size: 14px;
+        height: 44px;
+        width: 100%;
+        min-width: 320px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:476px) {
+  .promo-content__right {
+    min-width: 269px;
+  }
+  .promo-content__right_text {
+    bottom: -40px;
+  }
+  .promo-content__left {
+    max-width: calc(100% - 230px);
+  }
+}

@@ -17,3 +17,48 @@
     }
   }
 }
+
+@media screen and (max-width:768px) {
+  .review-slider__navigation {
+    display: none;
+  }
+  .review-slider.swiper {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .review {
+    padding:30px 0 40px;
+  }
+  .review-title {
+    margin-bottom: 30px;
+  }
+  .review-item {
+    padding: 20px;
+    &__ico {
+      width: 80px;
+      min-width: 80px;
+      height: 80px;
+    }
+    &__info {
+      gap: 5px;
+    }
+    &__name {
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 20px; /* 117.647% */
+    }
+    &__position {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &__content {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}

@@ -39,3 +39,20 @@
     bottom: auto !important;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .offer {
+    padding: 40px 0 35px;
+    &-title {
+      margin-bottom: 30px;
+    }
+  }
+  .offer-slider__circle {
+    width: 310px;
+    min-width: 310px;
+    margin-bottom: 50px !important;
+  }
+  .offer-slider__pagination {
+    top: 290px !important;
+  }
+}

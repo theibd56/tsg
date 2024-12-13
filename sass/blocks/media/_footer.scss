@@ -6,3 +6,59 @@
     width: 400px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer-form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-content__right {
+    position: absolute;
+    right: -50px;
+    min-width: 400px;
+    width: 400px;
+    bottom: 50px;
+  }
+  .footer-smoke {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 30px 0 59px;
+  }
+  .footer-title {
+    max-width: 280px;
+  }
+  .footer-text {
+    max-width: 124px;
+    margin-top: 20px;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .footer-form {
+    margin-top: 30px;
+    gap: 10px;
+    input {
+      height: 44px;
+      font-size: 14px;
+    }
+    button {
+      height: 44px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer-content__right {
+    min-width: 380px;
+    width: 380px;
+    right: -110px;
+    bottom: 30px;
+  }
+}

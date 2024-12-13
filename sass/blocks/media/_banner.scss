@@ -25,3 +25,44 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .banner {
+    &-title {
+      max-width: 400px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 26px; /* 130% */
+    }
+    &-descr {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &-content {
+      padding: 40px 20px;
+      min-height: auto;
+      gap: 40px;
+    }
+    &-form {
+      min-width: 100%;
+      width: 100%;
+      gap: 10px;
+      input {
+        height: 44px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+      }
+      button {
+        height: 44px;
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}

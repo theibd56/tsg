@@ -7,6 +7,7 @@
   &-content {
     display: flex;
     align-items: center;
+    position: relative;
     &__image {
       width: 560px;
       height: 100%;
@@ -20,6 +21,19 @@
       min-width: 350px;
       position: relative;
       z-index: 1;
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 209px;
+      height: 209px;
+      background: #fff;
+      border-radius: 50%;
+      filter: blur(200px);
+
+      position: absolute;
+      top: -50px;
+      left: -50px;
     }
   }
   &-title {

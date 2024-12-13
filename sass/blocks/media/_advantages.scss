@@ -14,7 +14,35 @@
     gap: 20px;
   }
   .advantages-item {
-    gap: 10px;
+    gap: 20px;
     min-height: 140px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .advantages {
+    margin-top: -40px;
+  }
+  .advantages-wrapper {
+    gap: 10px;
+  }
+  .advantages-item {
+    min-height: 80px;
+    padding: 20px;
+    &__ico {
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+    }
+    &__title {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 }

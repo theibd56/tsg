@@ -9,3 +9,27 @@
     grid-template: 220px / repeat(3, 1fr);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .partners-list {
+    grid-template: 220px / repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .partners {
+    padding: 40px 0;
+  }
+  .partners-title {
+    margin-bottom: 30px;
+  }
+  .partners-list {
+    grid-template: 110px / repeat(2, 1fr);
+    grid-auto-rows: 110px;
+    gap: 10px;
+  }
+  .partners-item img {
+    max-width: 122px;
+    height: 80px;
+  }
+}

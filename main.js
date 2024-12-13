@@ -55,11 +55,21 @@ const productsSlider = new Swiper('.products-slider', {
         // 300: {
         //     slidesPerView: 2.25,
         // },
+        320: {
+            slidesPerView: 1.2,
+            spaceBetween: 15,
+        },
         576: {
+            slidesPerView: 1.8,
+            spaceBetween: 15,
+        },
+        768: {
             slidesPerView: 2.5,
+            spaceBetween: 15,
         },
         992: {
             slidesPerView: 3,
+            spaceBetween: 30,
         },
     },
     on: {
@@ -100,11 +110,13 @@ const reviewSlider = new Swiper('.review-slider', {
         // 992: {
         //     slidesPerView: 4,
         // },
-        576: {
-            slidesPerView: 1.8,
+        320: {
+            slidesPerView: 1.2,
+            spaceBetween: 15,
         },
         992: {
             slidesPerView: 2.5,
+            spaceBetween: 30,
         },
         1200: {
             slidesPerView: 3,

@@ -20,6 +20,37 @@
     flex-direction: column;
   }
   .result-item {
-    width: 100%
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    &__text {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .result {
+    padding: 40px 0;
+    &-title {
+      margin-bottom: 30px;
+      max-width: 450px;
+    }
+    &-item {
+      padding: 20px;
+      &__ico {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+      }
+      &__text {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
   }
 }

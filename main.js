@@ -17,17 +17,6 @@ const offerSlider = new Swiper('.offer-slider .swiper', {
     speed: 200,
     loop: false,
     effect: "fade",
-    breakpoints: {
-        // 300: {
-        //     slidesPerView: 2.25,
-        // },
-        // 576: {
-        //     slidesPerView: 3,
-        // },
-        // 992: {
-        //     slidesPerView: 4,
-        // },
-    },
     navigation: {
         prevEl: '.offer-slider__prev',
         nextEl: '.offer-slider__next',
@@ -52,10 +41,7 @@ const productsSlider = new Swiper('.products-slider', {
     speed: 600,
     loop: false,
     breakpoints: {
-        // 300: {
-        //     slidesPerView: 2.25,
-        // },
-        320: {
+        300: {
             slidesPerView: 1.2,
             spaceBetween: 15,
         },
@@ -101,16 +87,7 @@ const reviewSlider = new Swiper('.review-slider', {
         clickable: true,
     },
     breakpoints: {
-        // 300: {
-        //     slidesPerView: 2.25,
-        // },
-        // 576: {
-        //     slidesPerView: 3,
-        // },
-        // 992: {
-        //     slidesPerView: 4,
-        // },
-        320: {
+        300: {
             slidesPerView: 1.2,
             spaceBetween: 15,
         },

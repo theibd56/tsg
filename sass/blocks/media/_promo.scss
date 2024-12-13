@@ -22,6 +22,7 @@
 @media screen and (max-width:768px) {
   .promo-form {
     flex-direction: column;
+    align-items: flex-start;
     input, button {
       width: 250px;
     }

@@ -24,6 +24,26 @@
     margin: 10px auto;
     text-align: center;
   }
+  .banner .container {
+    border-radius: 0;
+  }
+
+  .banner-smoke {
+    &-l {
+      //transform: scale(0.8);
+      //bottom: -100px;
+      //left: -252px;
+      min-width: 1000px;
+    }
+    &-r {
+      //transform: rotate(-90deg);
+      //top: 160px;
+      //bottom: auto;
+      //right: -230px;
+      //min-width: 1000px;
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {

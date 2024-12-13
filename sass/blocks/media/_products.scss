@@ -1,6 +1,8 @@
 @media screen and (max-width: 1200px) {
   .products-banner {
-    padding: 40px 80px;
+    .container {
+      padding: 40px 80px;
+    }
     &__title span {
       margin-left: 50px;
     }
@@ -14,13 +16,24 @@
   .products-points {
     grid-template: auto / 1fr;
   }
-  .products-banner {
+  .products-banner .container {
     flex-direction: column;
+    border-radius: 0;
   }
   .products-banner__title {
     text-align: center;
     span {
       margin: 0;
+    }
+  }
+  .products-banner__smoke {
+    &-l {
+      left: -234px;
+      transform: rotate(-31deg);
+      bottom: 10px;
+    }
+    &-r {
+      min-width: 600px;
     }
   }
 }
@@ -67,9 +80,10 @@
       margin-bottom: 40px;
     }
     &-banner {
-      border-radius: 20px;
-      gap: 30px;
-      padding: 40px 20px;
+      .container {
+        gap: 30px;
+        padding: 40px 20px;
+      }
       &__title {
         max-width: 350px;
 
@@ -91,6 +105,7 @@
       &__descr {
         max-width: 450px;
 
+        margin: 0;
         margin-top: 5px;
 
         text-align: center;
@@ -138,6 +153,15 @@
           line-height: normal;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .products-banner__title {
+    text-align: center;
+    span {
+      text-align: center;
     }
   }
 }

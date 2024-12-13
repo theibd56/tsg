@@ -19,8 +19,12 @@
     width: 400px;
     bottom: 50px;
   }
-  .footer-smoke {
-    display: none;
+  //.footer-smoke {
+  //  display: none;
+  //}
+  .footer-smoke__right {
+    min-width: 800px;
+    right: -100px;
   }
 }
 

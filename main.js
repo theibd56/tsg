@@ -100,6 +100,9 @@ const reviewSlider = new Swiper('.review-slider', {
         // 992: {
         //     slidesPerView: 4,
         // },
+        576: {
+            slidesPerView: 1.8,
+        },
         992: {
             slidesPerView: 2.5,
         },

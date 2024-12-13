@@ -3,3 +3,18 @@
     gap: 5px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .advantages {
+    margin-top: -70px;
+  }
+  .advantages-wrapper {
+    position: static;
+    grid-template: auto / 1fr;
+    gap: 20px;
+  }
+  .advantages-item {
+    gap: 10px;
+    min-height: 140px;
+  }
+}

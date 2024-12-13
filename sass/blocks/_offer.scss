@@ -8,9 +8,7 @@
     }
   }
   &-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
   }
   &-left, &-right {
     width: 275px;

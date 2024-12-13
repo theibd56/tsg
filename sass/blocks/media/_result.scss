@@ -14,3 +14,12 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .result-wrapper {
+    flex-direction: column;
+  }
+  .result-item {
+    width: 100%
+  }
+}

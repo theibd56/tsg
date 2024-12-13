@@ -1,0 +1,14 @@
+@media screen and (max-width: 992px) {
+  .header-phone {
+    display: none;
+  }
+  .header-feedback {
+    padding: 8px;
+    span {
+      display: none;
+    }
+    svg {
+      display: block !important;
+    }
+  }
+}

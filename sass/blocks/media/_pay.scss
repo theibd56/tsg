@@ -6,3 +6,43 @@
     padding-top: 100px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .pay-title {
+    max-width: 100%;
+    text-align: center;
+    position: static;
+  }
+  .pay-wrapper {
+    padding: 0;
+    margin-top: 40px;
+
+    flex-direction: column;
+    gap: 40px;
+  }
+  .pay-item {
+    width: 100%;
+  }
+  .pay-item__ico {
+    top: auto;
+    bottom: -20px;
+    left: auto;
+    right: 0;
+    transform: none;
+  }
+  .pay-buttons {
+    margin-top: 40px;
+  }
+  .pay-buttons__decorate {
+    display: none;
+  }
+  .pay-buttons__wrapper {
+    flex-direction: column;
+  }
+  .pay-buttons__order {
+    order: 0;
+  }
+  .pay-buttons__pricelist {
+    order: 1;
+  }
+}

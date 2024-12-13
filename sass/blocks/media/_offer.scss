@@ -8,3 +8,34 @@
     width: 480px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .offer-slider .swiper-slide {
+    flex-direction: column;
+    .offer-slider__circle {
+      order: 1;
+      margin-bottom: 80px;
+    }
+    .offer-left {
+      width: 100%;
+      order: 2;
+      gap: 10px;
+    }
+    .offer-right {
+      width: 100%;
+      order: 2;
+      gap: 10px;
+    }
+  }
+  .offer-slider__navigation {
+    display: none;
+  }
+  .offer-slider .swiper-wrapper {
+    align-items: flex-start;
+  }
+  .offer-slider__pagination {
+    position: absolute;
+    top: 350px !important;
+    bottom: auto !important;
+  }
+}

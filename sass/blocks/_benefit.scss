@@ -141,6 +141,8 @@
     background: rgba(255, 255, 255, 0.90);
     backdrop-filter: blur(12.5px);
     padding: 20px;
+
+    position: relative;
     &__title {
       color: #111;
       text-align: center;
@@ -161,6 +163,18 @@
       display: -webkit-box;
       -webkit-box-orient: vertical;
       overflow: hidden;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent-color);
+
+      position: absolute;
+      top: 10px;
+      left: 10px;
     }
   }
 }

@@ -9,3 +9,18 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .products-points {
+    grid-template: auto / 1fr;
+  }
+  .products-banner {
+    flex-direction: column;
+  }
+  .products-banner__title {
+    text-align: center;
+    span {
+      margin: 0;
+    }
+  }
+}

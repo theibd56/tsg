@@ -7,3 +7,35 @@
     width: calc(33.33% - 17px);
   }
 }
+
+@media screen and (max-width: 992px) {
+  .about-more {
+    flex-direction: column;
+  }
+  .about-more__item {
+    width: 100%;
+  }
+  .about-image {
+    margin-top: 40px;
+    position: relative;
+    left: auto;
+    width: 100%;
+    height: auto;
+  }
+  .about-wrapper {
+    max-width: 100%;
+  }
+  .about-advantages__title {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-advantages__wrapper {
+    flex-direction: column;
+  }
+  .about-advantages__item {
+    width: 100%;
+  }
+}

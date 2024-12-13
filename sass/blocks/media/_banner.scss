@@ -12,3 +12,16 @@
     margin-left: 0;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .banner-content {
+    flex-direction: column;
+  }
+  .banner-title {
+    text-align: center;
+  }
+  .banner-descr {
+    margin: 10px auto;
+    text-align: center;
+  }
+}

@@ -1,14 +1,13 @@
 @media screen and (max-width: 992px) {
   .header-phone {
-    display: none;
-  }
-  .header-feedback {
     padding: 8px;
-    span {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    &__text {
       display: none;
     }
-    svg {
-      display: block !important;
-    }
+  }
+  .header-feedback {
+    display: none;
   }
 }
